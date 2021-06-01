@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ReadMe.txt">
+    <Files>
+      <File FileName="Assets\Pathfind.cs" Line="64" Column="43" />
+      <File FileName="Assets\ActiveNodes.cs" Line="152" Column="55" />
+      <File FileName="..\Unity_Demo\Assets\Code\Pathfind.cs" Line="8" Column="65" />
+      <File FileName="Assets\WorldSpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Nodes.cs" Line="1" Column="1" />
+      <File FileName="..\Unity_Demo\Assets\Code\Node.cs" Line="1" Column="1" />
+      <File FileName="..\Unity_Demo\Assets\Code\Player.cs" Line="1" Column="1" />
+      <File FileName="..\Unity_Demo\Assets\Code\WorldSpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets\ReadMe.txt" Line="7" Column="118" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\ActiveNodes.cs" line="176" offsetX="632" offsetY="3324" expression="n" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
