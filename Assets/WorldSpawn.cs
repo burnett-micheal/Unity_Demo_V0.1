@@ -8,13 +8,15 @@ public class WorldSpawn : MonoBehaviour {
 	public int wallChance;
 	public float spacing;
 	public int spawnerCount;
-
 	public GameObject node;
 
 	void Start () {
 		Nodes _nodesClass = new Nodes ();
+		ActiveNodeData activeNodeData = new ActiveNodeData ();
+
 		ActiveNodes activeNodesScr = gameObject.GetComponent<ActiveNodes> ();
 		activeNodesScr.nodesClass = _nodesClass;
+		activeNodesScr.activeNodeData = activeNodeData;
 
 		Dictionary<Vector2, Node> nodes = new Dictionary<Vector2, Node>();
 		List<Node> spaceNodes = new List<Node> ();
@@ -37,8 +39,7 @@ public class WorldSpawn : MonoBehaviour {
 		for(int i = 0; i < spawnerCount; i++){
 			index = rand (0, spaceNodes.Count - 1);
 			Node item = spaceNodes [index];
-			item.type = "spawner";
-			activeNodesScr.newSpawner (item);
+			activeNodeData.spawners.Create(item);
 			spaceNodes.RemoveAt (index);
 		}
 		index = rand(0, spaceNodes.Count - 1);
@@ -67,11 +68,6 @@ public class WorldSpawn : MonoBehaviour {
 		}
 			
 		Destroy(gameObject.GetComponent<WorldSpawn> ());
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	private int rand(int min, int max){
